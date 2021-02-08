@@ -1,31 +1,60 @@
-body {
-    font-family: Arial;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
+body{
+  background-color: #13141b;
+  color: #ffffff;
+ 
+  background-size: 100%;
+  background-position: top;
+}
+
+.form-control{
+  background-color:rgba(255, 255, 255, 0.2);
+  padding: 22px;
+  border: none;
+  border-radius: 25px;
+}
+.btn{
+  border-radius: 5%;
+  padding: 2% 2%;
+}
+
+.btn-privious{
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.navbar-toggler {
+  border: none;
+}
+.search-box{
+  position: relative;
+}
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.single-result{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+#food-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap:40px;
+ 
+}
+#foodDiv img{
+  width: 100px;
+  height: 100px;
+}
+ 
+#food-recipe{
+  margin-left: 8%;
+}
+
+#food-recipe img{
+  width: 450px;
+  border: #13141b;
+  margin-left: 10%;
+}
