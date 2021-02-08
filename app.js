@@ -13,7 +13,8 @@ const searchFoods = async() =>{
         const foodDiv=document.createElement('div');
         foodDiv.className='single-result row align-items-center my-3 p-3'
         foodDiv.innerHTML=`
-        <div onclick="getRecipe('${food.strMeal}')" class="col-md-9">
+        
+        <div onclick="getRecipe('${food.strMeal}')">
         <img src="${food.strMealThumb}">
         <h3 class="food-name">${food.strMeal}</h3>
         
@@ -40,12 +41,13 @@ const getRecipe=foodname=>{
     
     <img src="${rec.strMealThumb}">
     <h2>${rec.strMeal}</h2>
+    <h5>Ingredients</h4>
      <ul>
-     <li>${rec.strIngredient1}</li>
-     <li>${rec.strIngredient2}</li>
-     <li>${rec.strIngredient3}</li>
-     <li>${rec.strIngredient4}</li>
-     <li>${rec.strIngredient5}</li>
+     <li>${rec.strMeasure1} ${rec.strIngredient1}</li>
+     <li>${rec.strMeasure2} ${rec.strIngredient2}</li>
+     <li>${rec.strMeasure3} ${rec.strIngredient3}</li>
+     <li>${rec.strMeasure4} ${rec.strIngredient4}</li>
+     <li>${rec.strMeasure5} ${rec.strIngredient5}</li>
      </ul>
       `;
  })
